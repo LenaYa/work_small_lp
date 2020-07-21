@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Launcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='launcher.css'>
+</head>
+<body>
+	<div class="launcher-landing-wrap">
+		<nav>
+			<div class="container container-flex">
+				<img src="launcher/launcher.png" class="logo">
+				<a href="#Keypoints" class="menu-item">Keypoints</a>
+				<a href="#How" class="menu-item">How it works</a>
+				<a href="#Advantages" class="menu-item">Advantages</a>
+			</div>
+		</nav>
+ 		<div class="top-logo">
+			<div class="container">
+				<img src="launcher/Launcher_logo_large.png" class="logo">
+				<img src="launcher/abyss_launcher.png" class="text">
+				<p>All your games and users in one app.</p>
+			</div>
+		</div>
+		<div class="advantages" id="Keypoints">
+			<div class="container">
+				<div class="title">Abyss launcher fits you if</div>
+			</div>
+			<div class="container container-flex">
+				<div class="item item1">
+					You have a wide range of Adobe
+					flash-based games and you want
+					keep them running
+				</div>
+				<div class="item item2">
+					You want to keep all the player base on your
+					own – and don’t want to give the billing
+					and authorization data to third parties
+				</div>
+				<div class="item item3">
+					You want to put all your games
+					into one entry point and convert
+					the audience between projects
+				</div>
+			</div>
+			<div class="container">
+				<div class="blue-text">
+					We will provide a ready-to-use client app within 3-4 weeks after the contract is signed
+				</div>
+			</div>
+		</div>
+		<div class="how-it-works" id="How">
+			<div class="container container-flex">
+				<div class="left">
+					<img src="launcher/how_it_works.png" class="name">
+					<img src="launcher/frame.png" class="robot">
+				</div>
+				<div class="right">
+					<div class="item item1">
+						<div class="item-title">Single client</div>
+						<div class="item-text">Abyss launcher supports all kind of games</div>
+					</div>
+					<div class="item item2">
+						<div class="item-title">Flash support</div>
+						<div class="item-text">Launcher supports Adobe Flash Tech</div>
+					</div>
+					<div class="item item3">
+						<div class="item-title">Simple integration</div>
+						<div class="item-text">You don’t need to change your current authorization and billing systems</div>
+					</div>
+					<div class="item item4">
+						<div class="item-title">Customer support</div>
+						<div class="item-text">We provide both client solution and further technical support</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<a href="#form" class="button">Contact us</a>
+			</div>
+		</div>
+		<div class="service" id="Advantages">
+			<div class="container">
+				<div class="top">
+					<img src="launcher/advantages.png" class="text">
+					<img src="launcher/Frame1.png" class="note">
+				</div>
+				<div class="container container-flex">
+					<div class="item item1">
+						<img src="launcher/clock.png" alt="">Quick download</div>
+					<div class="item item2">
+						<img src="launcher/mouse.png" alt="">One-click setup</div>
+					<div class="item item3">
+						<img src="launcher/folder.png" alt="">Game installation folder select</div>
+					<div class="item item4">
+						<img src="launcher/menu.png" alt="">The system automatically creates shortcuts for installed games</div>
+					<div class="item item5">
+						<img src="launcher/bell.png" alt="">System pushes an automatic update in case of major updates</div>
+					<div class="item item6">
+						<img src="launcher/book.png" alt="">Automatic download of all the necessary .dlls and libraries</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-us" id="form">
+			<div class="container">
+				<img src="launcher/contact_us.png" class="contact">
+			</div>
+			<div class="container container-flex">
+				<form id="launcher-form" action="{{ url_for('launcher_partners') }}" method="post" enctype="multipart/form-data">
+	                <input name="csrf_token" type="hidden" value="{{ csrf_token() }}">
+
+					<div class="left">
+						<label>Your e-mail
+							<div class="input-wrap"><input type="email" name="email" placeholder="Type your e-mail" required></div>
+						</label>
+						<label>Project name
+							<div class="input-wrap"><input type="text" name="project" placeholder="Type project name" required></div>
+						</label>
+					</div>
+					<div class="right">
+						<label>Project description
+							<div class="input-wrap"><textarea name="message" placeholder="Leave some description about your project" required></textarea></div>
+						</label>
+					</div>
+					<div class="btn-wrap">
+
+	                    <div class="error">Something went wrong.</div>
+	                    <div class="success">Email was sent.</div>
+						<button class="button">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+		    <div class="container">
+				        
+		        <ul class="socials mobile">
+		            <li><a href="https://www.facebook.com/theabyss/" target="_blank" class="		                <li><a href="https://www.facebook.com/theabyss/" target="_blank" class="facebook">
+		                    <img src="launcher/facebook.png" alt="">
+		                </a></li>
+		                <li><a href="https://www.linkedin.com/company/theabyss/" target="_blank" class="linkedin">
+		                    <img src="launcher/linkedin.png" alt="">
+		                </a></li>
+		                <li><a href="https://medium.com/theabyss" target="_blank" class="instagram">
+		                    <img src="launcher/medium.png" alt="">
+		                </a></li>
+		                <li><a href="https://telegram.theabyss.com/" target="_blank" class="telegram">
+		                    <img src="launcher/telegram.png" alt="">
+		                </a></li>
+		                <li><a href="https://twitter.com/theabyss" target="_blank" class="twitter">
+		                    <img src="launcher/twitter.png" alt="">
+		                </a></li>
+		                
+
+		        </ul>
+		        <div class="links">
+		            <ul class="cols">
+		          <!--       <li>
+		                    <span>service</span>
+		                    <ul class="inner">
+		                        <li><a href="/#about">About</a></li>
+		                        <li><a href="/#features">Features</a></li>
+		                        <li><a href="/#games">Games</a></li>
+		                        
+		                        <li><a href="/#roadmap">Roadmap</a></li>
+		                    </ul>
+		                </li>
+		                
+		                <li>
+		                    <a href="https://medium.com/theabyss" target="_blank" class="page">Medium Blog</a>
+		                    <a href="/developers" class="page">For developers</a>
+		                    <a href="/unreal" class="page">UE4 SPECIAL PROGRAM</a>
+		                    <a href="/token" class="page">Abyss token</a>
+		                    <a href="/partners" class="page">Partners</a>
+		                </li> -->
+		                <li class="docs">
+		                    
+		                    
+		                    <a href="https://cdn.theabyss.com/static/docs/theabyss-cookie-policy.pdf?20180628T163633" target="_blank">Cookie Policy</a>
+		                    <a href="http://support.theabyss.com/" target="_blank">Contact us</a>
+		                </li>
+		            </ul>
+		        </div>
+		        <div class="logos">
+		            <ul class="socials">
+		                <li><a href="https://www.facebook.com/theabyss/" target="_blank" class="facebook">
+		                    <img src="launcher/facebook.png" alt="">
+		                </a></li>
+		                <li><a href="https://www.linkedin.com/company/theabyss/" target="_blank" class="linkedin">
+		                    <img src="launcher/linkedin.png" alt="">
+		                </a></li>
+		                <li><a href="https://medium.com/theabyss" target="_blank" class="instagram">
+		                    <img src="launcher/medium.png" alt="">
+		                </a></li>
+		                <li><a href="https://telegram.theabyss.com/" target="_blank" class="telegram">
+		                    <img src="launcher/telegram.png" alt="">
+		                </a></li>
+		                <li><a href="https://twitter.com/theabyss" target="_blank" class="twitter">
+		                    <img src="launcher/twitter.png" alt="">
+		                </a></li>
+		                
+
+		            </ul>
+		            <div class="abyss-logo">
+		                <a class="logo" href="/"></a>
+		                <a class="logo logo-mobile" href="/"></a>
+		                <div class="">© 2017–2019 The Abyss LTD<br>
+		                
+		            </div>
+		        </div>
+		    </div>
+		</footer> 
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script>
+		
+		var $launcherForm = $('#launcher-form');
+        
+
+
+		$launcherForm.on('submit', function(event) {
+		    $launcherForm.find('button').prop('disabled', true);
+		    var formData = new FormData($launcherForm[0]);
+		    $.ajax({
+		        url: $launcherForm.attr('action'),
+		        type: 'POST',
+		        data: formData,
+		        processData: false,
+		        contentType: false
+		    }).done(function(response) {
+		        if (response['status'] === 'ok') {
+		            $launcherForm.find('.success').show();
+		            $launcherForm.find('button').prop('disabled', true);
+		            $launcherForm.find("input, textarea").val("");
+
+
+		        } else {
+		            console.log('Validation error', response);
+		            $launcherForm.find('button').prop('disabled', false);
+		        }
+		    }).fail(function(jqXHR, textStatus, errorThrown) {
+		        console.log('Fail', errorThrown);
+		        $launcherForm.find('button').prop('disabled', false);
+		        $launcherForm.find('.error').show();
+		    });
+
+		    event.preventDefault();
+		});
+
+	</script>
+
+</body>
+</html>

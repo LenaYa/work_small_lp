@@ -1,0 +1,650 @@
+
+
+@font-face
+	font-family: 'cyrvetica'
+	font-style: normal
+	font-weight: 600
+	src: local('cyrvetica'), url('fonts/cyrvetica.ttf') format('truetype')
+
+
+
+@font-face
+	font-family: 'segoeui'
+	font-style: normal
+	font-weight: 600
+	src: local('seguisb'), url('fonts/seguisb.ttf') format('truetype')
+
+
+
+*
+	padding: 0
+	margin: 0
+
+	scroll-behavior: smooth
+
+.launcher-landing-wrap 
+	background-color:  #16042E 
+	background-image: url(launcher/Up_backgr.jpg), url(launcher/Wave_backgr3.png), url(launcher/Down_backgr.jpg)
+	background-size: 100% auto, 80% auto, 100% auto
+	background-repeat: no-repeat, no-repeat, no-repeat
+	background-position: top center, bottom 25% right, bottom center
+	font-family: segoeui, Arial, sans-serif
+	color: #fff
+	scroll-behavior: smooth
+
+	@media screen and (max-width: 1199px)
+		background-image: url(launcher/Up_backgr.jpg), url(launcher/Wave_backgr3.png), url(launcher/Down_backgr.jpg)
+		background-size: auto 700px, 100% auto, auto 700px
+		background-repeat: no-repeat, no-repeat, no-repeat
+		background-position: top center, bottom 23% right, bottom center
+.container 
+	width: 1200px
+	margin: 0 auto 
+	&.container-flex
+		display: flex
+	@media screen and (max-width: 1199px)
+		width: 100%
+		padding: 0 10px
+		box-sizing: border-box
+
+.button 
+	width: 301px
+	height: 60px 
+	line-height: 60px 
+	font-size: 20px
+	color: #fff
+	background: #0E7EE6
+	border-radius: 30px 
+	text-align: center
+	margin: 0 auto
+	border: 0
+	outline: 0
+	cursor: pointer
+	text-decoration: none
+	display: block
+	&:hover 
+		background: #4aa8ff
+
+
+
+nav 
+	font-size: 16px 
+	padding-top: 40px
+	@media screen and (max-width: 599px)
+		padding-top: 20px
+	.container-flex
+		@media screen and (max-width: 599px)
+			justify-content: space-between
+	a, img
+		text-decoration: none
+		color: #fff
+		line-height: 42px 
+		display: inline-block
+		margin-right: 67px
+		@media screen and (max-width: 599px)
+			margin-right: 0
+			font-size: 14px
+
+		img 
+			width: 32px 
+			height: 42px
+
+.top-logo
+	padding-top: 158px
+	padding-bottom: 224px
+	@media screen and (max-width: 768px)
+		padding-top: 100px
+		padding-bottom: 50px
+
+	img 
+		display: block
+		margin: 0 auto
+		&.logo
+			width: 140px
+			height: auto
+			margin-bottom: 41px 
+			max-width: 50% 
+
+		&.text
+			width: 407px
+			height: auto
+			margin-bottom: 20px
+			max-width: 100%
+	p 
+		font-size: 20px
+		text-align: center
+		font-weight: 600
+		line-height: 27px
+		@media screen and (max-width: 599px)
+			font-size: 16px
+
+.advantages
+	margin-bottom: 209px
+	padding-top: 50px
+	background: url(launcher/Wave_backgr1.png) no-repeat center right
+
+	@media screen and (max-width: 935px)
+		margin-bottom: 50px
+	.title
+		font-size: 20px
+		line-height: 23px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		font-weight: bold
+		font-family: cyrvetica, Arial, sans-serif
+		@media screen and (max-width: 599px)
+			font-size: 16px
+	.container-flex
+		justify-content: space-between
+		margin-bottom: 50px
+		@media screen and (max-width: 584px)
+			flex-wrap: wrap
+			justify-content: center
+
+		.item 
+			padding-top: 160px
+			font-weight: 600
+			font-size: 14px 
+			background: url(launcher/007-gaming.png) no-repeat center top
+			text-align: center
+			line-height: 36px
+			padding: 160px 74px 0
+			box-sizing: border-box
+			width: 387px
+			@media screen and (max-width: 1199px)
+				width: 30%
+				padding: 160px 0 0 !important
+			@media screen and (max-width: 767px)
+				line-height: 24px
+			@media screen and (max-width: 584px)
+				width: 50%
+				padding-left: 10px!important
+				padding-right: 10px!important
+
+			@media screen and (max-width: 420px)
+				width: 100%
+
+			&.item2
+				background: url(launcher/020-live_streaming.png) no-repeat center top
+				padding: 160px 39px 0 
+			&.item3
+				background: url(launcher/007-gaming1.png) no-repeat center top
+				padding: 160px 76px 0
+
+	.blue-text 
+		font-weight: 600
+		font-size: 20px
+		line-height: 37px
+		text-align: center
+		color: #4391EC
+		max-width: 936px
+		margin: 0 auto
+		@media screen and (max-width: 935px)
+			br 
+				display: none
+		@media screen and (max-width: 599px)
+			max-width: 100%
+			font-size: 18px
+			line-height: 30px
+
+
+
+.how-it-works
+	margin-bottom: 156px
+	background: url(launcher/Wave_backgr2.png) no-repeat bottom left
+	background-size: 80% auto
+	padding-top: 50px
+
+	@media screen and (max-width: 767px)
+		margin-bottom: 50px
+		background: url(launcher/Wave_backgr2.png) no-repeat center left
+		background-size: 100% auto
+	.button
+		margin-top: 48px
+	.container-flex
+		justify-content: space-between
+		align-items: stretch
+
+		@media screen and (max-width: 1199px)
+			flex-wrap: wrap
+		.left
+			width: 50%
+			@media screen and (max-width: 1199px)
+				padding-right: 10px
+				box-sizing: border-box
+			@media screen and (max-width: 767px)
+				padding-right: 0
+				width: 100%
+				margin-bottom: 30px 
+
+
+			img 
+				display: block
+				@media screen and (max-width: 767px)
+					margin-left: auto
+					margin-right: auto
+
+			.name 
+				width: 479px
+				height: auto
+				margin-bottom: 40px
+				max-width: 100%
+			.robot
+				width: 488px
+				height: auto
+				max-width: 100%
+		.right 
+			width: 50% 
+			display: flex
+			flex-wrap: wrap 
+			@media screen and (max-width: 767px)
+				width: 100%
+
+			.item 
+				width: 285px 
+				padding-top: 80px 
+				margin-bottom: 52px
+				background: url(launcher/computer.png) no-repeat top left
+				@media screen and (max-width: 1159px)
+					width: 50%
+					padding-right: 10px 
+					box-sizing: border-box
+				@media screen and (max-width: 767px)
+					text-align: center
+					background-position: top center!important
+				@media screen and (max-width: 420px)
+					width: 100%
+
+
+				.item-title 
+					font-size: 16px
+					line-height: 19px
+					font-family: cyrvetica, Arial, sans-serif
+					margin-bottom: 20px 
+				.item-text 
+					font-weight: 600
+					font-size: 14px
+					line-height: 28px
+					color: #4391EC
+					@media screen and (max-width: 767px)
+						margin-left: auto
+						margin-right: auto
+				&.item1
+					background: url(launcher/computer.png) no-repeat top left
+					.item-text
+						max-width: 180px
+				&.item2
+					background: url(launcher/adobe-flash-player.png) no-repeat top left
+					.item-text
+						max-width: 174px
+				&.item3
+					background: url(launcher/server.png) no-repeat top left
+					.item-text
+						max-width: 260px
+				&.item4
+					background: url(launcher/browsing.png) no-repeat top left
+					.item-text
+						max-width: 215px
+
+
+
+
+
+.service 
+	padding-top: 50px
+	.top 
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 70px
+		@media screen and (max-width: 479px)
+			flex-wrap: wrap
+			justify-content: flex-end
+			margin-bottom: 0	
+			
+		img 
+			display: block
+		.text 
+			width: 693px 
+			height: auto
+			@media screen and (max-width: 1109px)
+				width: 50%
+			@media screen and (max-width: 479px)
+				width: 100%
+				box-sizing: border-box
+				padding: 0 10px 
+		.note 
+			width: 386px
+			height: auto
+			max-width: 100%
+			@media screen and (max-width: 1109px)
+				width: 30%
+
+			@media screen and (max-width: 479px)
+				width: 50%
+
+	.container-flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		@media screen and (max-width: 479px)
+			margin-top: -50px
+		.item 
+			width: 360px 
+			max-width: 100% 
+			display: flex
+			align-items: center
+			font-size: 16px 
+			line-height: 25px
+			margin-bottom: 71px
+			font-family: cyrvetica, Arial, sans-serif
+			@media screen and (max-width: 1119px)
+				width: 30%
+			@media screen and (max-width: 767px)
+				width: 50%
+				padding-right: 10px
+				box-sizing: border-box
+			@media screen and (max-width: 479px)
+				width: 100%
+				margin-bottom: 50px
+
+			img 
+				width: 50px
+				height: 50px
+				margin-right: 20px
+				display: block
+
+
+.contact-us
+	padding-top: 217px
+	@media screen and (max-width: 960px)
+		padding-top: 100px
+	
+	.contact 
+		width: 333px
+		height: auto
+		max-width: 100%
+		display: block
+		margin: 0 auto 70px
+	form 
+		width: 100% 
+		box-sizing: border-box
+		padding: 70px 102px
+		background: linear-gradient(90deg, #AB10CF 0%, #2A0964 100%)
+		border-radius: 20px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media screen and (max-width: 1199px)
+			padding: 50px 70px
+		@media screen and (max-width: 490px)
+			padding: 30px 10px
+
+		.btn-wrap 
+			width: 100% 
+			flex-shrink: 0
+			margin-top: 20px
+			text-align: center
+			button 
+				max-width: 100%
+			button[disabled],
+			button:disabled
+				background: #16032E
+				opacity: .25
+			.error
+				color: red
+				display: none 
+				margin-bottom: 20px
+			.success 
+				color: #fff
+				display: none
+				margin-bottom: 20px
+		label
+			font-family: cyrvetica, Arial, sans-serif
+
+		.input-wrap
+			position: relative
+			margin-top: 10px
+			margin-bottom: 30px
+
+			&:before 
+				content: ''
+				position: absolute 
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				border-radius: 30px
+				background: #16032E
+				opacity: .25
+		.left
+			width: 386px
+			max-width: 100%
+			@media screen and (max-width: 1199px)
+				width: 50%
+				padding: 0 10px 
+				box-sizing: border-box
+
+			@media screen and (max-width: 767px)
+				width: 100%
+
+			input 
+				width: 100% 
+				line-height: 60px
+				border-radius: 30px
+				border: none
+				outline: none
+				box-sizing: border-box
+				padding-left: 30px
+				font-size: 14px
+				background: #fff
+				position: relative 
+				&:focus
+					background: #fff
+				&:placeholder-shown
+					background: transparent
+
+				&::-webkit-input-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&::-moz-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&:-moz-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&:-ms-input-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+
+		.right
+			width: 488px
+			max-width: 100%
+			@media screen and (max-width: 1199px)
+				width: 50%
+				padding: 0 10px 
+				box-sizing: border-box
+
+			@media screen and (max-width: 767px)
+				width: 100%
+			textarea 
+				width: 100%
+				height: 188px
+				background: transparent
+				border-radius: 30px
+				border: none
+				outline: none
+				resize: none
+				box-sizing: border-box
+				padding: 20px 30px
+				position: relative
+				background: #fff
+				&:focus
+					background: #fff
+				&:placeholder-shown
+					background: transparent
+				&::-webkit-input-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&::-moz-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&:-moz-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+				&:-ms-input-placeholder
+					color: #FFFFFF
+					opacity: 0.5
+
+
+
+
+footer 		
+	padding-top: 100px 
+	padding-bottom: 50px
+	ul li 
+		padding-left: 0
+		list-style: none
+	.container
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+
+		@media screen and (max-width: 968px)
+			flex-direction: column
+			justify-content: center
+		ul.cols
+			display: flex
+			align-items: flex-start
+			text-transform: uppercase
+			@media screen and (max-width: 968px)
+				align-items: center
+				justify-content: center
+			&>li
+				margin-right: 120px
+				@media screen and (max-width: 968px)
+					display: none
+				span
+					text-transform: uppercase
+					display: block
+					font-weight: bold
+					margin-bottom: 15px
+				ul.inner
+					li
+						margin-bottom: 15px
+						a
+							color: #fff
+							font-weight: 300
+							text-decoration: none
+							&:hover
+								text-decoration: underline
+
+				a.page
+					text-transform: uppercase
+					margin-bottom: 15px
+					text-decoration: none
+					display: block
+					white-space: nowrap
+					color: #fefefe
+					&:hover
+						text-decoration: underline
+				&.docs
+					text-transform: none
+					padding-bottom: 50px
+					a
+						display: block
+						margin-bottom: 15px
+						color: #fff
+						text-decoration: underline
+						font-weight: 300
+						&:hover
+							color: #fff
+
+					@media screen and (max-width: 1239px)
+						display: block
+						text-align: center
+						font-size: 18px
+						margin-right: 0
+						margin-bottom: 30px
+
+		.logos
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: flex-end
+
+			@media screen and (max-width: 1239px)
+				align-items: center
+			.abyss-logo
+				width: 290px
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+
+				@media screen and (max-width: 1239px)
+					align-items: center
+
+				a.logo
+					width: 153px
+					height: 35px
+					background: url("launcher/main_logo.svg") no-repeat right top
+					margin-bottom: 8px
+					background-size: 100% auto
+					display: block
+					&.logo-mobile
+						display: none
+						height: 25px
+						width: 120px
+
+					@media screen and (max-width: 768px)
+						display: none
+						&.logo-mobile
+							display: block
+
+				div
+					font-size: 12px
+					color: #fff
+					font-weight: 300
+					text-align: right
+					line-height: 19px
+					@media screen and (max-width: 1239px)
+						text-align: center
+		.socials
+			width: 194px
+			text-align: right
+			li
+				display: inline-block
+				width: 20px
+				height: 20px
+				margin: 0 4.5px
+				margin-top: 15px
+				a
+					width: 100%
+					line-height: 30px
+					font-size: 0
+					text-align: center
+					max-height: 20px
+					display: block
+					img
+						display: inline-block
+						max-width: 20px
+						height: auto
+						max-height: 20px
+				&.discord
+					width: 23px
+
+			&.mobile
+				display: none
+				padding: 18px 0
+				box-sizing: border-box
+				text-align: center
+				margin-bottom: 30px
+				width: 100%
+				li
+					display: inline-block
+					padding: 0 5px
+			@media screen and (max-width: 968px)
+				display: none
+				&.mobile
+					display: block
