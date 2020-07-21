@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap')
+*
+	margin: 0
+	padding: 0
+
+.ny2020-container
+	width: 1104px
+	margin: 0 auto
+	position: relative
+	z-index: 5
+	@media (max-width: 1104px)
+		width: 100%
+
+.ny2020-btn
+	background: radial-gradient(31.02% 50.83% at 50% 100%, #FFFED0 0%, rgba(254, 230, 61, 0.8) 34.37%, rgba(254, 223, 51, 0) 100%), linear-gradient(180deg, #F36719 0%, #FC981D 100%)
+	border: 2px solid rgba(254, 246, 99, 0.5)
+	box-sizing: border-box
+	box-shadow: 0px 10px 40px #1D1D23
+	border-radius: 6px
+	padding: 16px 40px
+	font-family: Montserrat, Arial, sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 29px
+	text-align: center
+	color: #FFFFFF
+	text-decoration: none
+	display: inline-block
+	transition: .3s
+	cursor: pointer
+	&:hover
+		filter: brightness(1.15)
+		box-shadow: 0px 10px 40px #000
+.ny2020-wrapper
+	font-family: Montserrat, Arial, sans-serif
+	background: #071227
+	width: 100%
+	.ny2020-to-top
+		width: 58px
+		height: 58px
+		background: url(img/up.png) no-repeat center
+		position: fixed
+		right: 15px
+		bottom: 15px
+		cursor: pointer
+		display: none
+		z-index: 55
+
+	.ny2020-head
+		background: url(img/top_bg.png), url(img/top_forest_w.jpg)
+		background-size: auto auto, auto 20%
+		background-repeat: no-repeat, no-repeat
+		background-position: top center, bottom center
+		padding: 38px 0 260px
+		position: relative
+		@media (min-width: 1441px)
+			background: url(img/top_bg.png), url(img/top_forest_w.jpg)
+			background-size: auto auto, auto 20%
+			background-repeat: no-repeat, no-repeat
+			background-position: top center, bottom center
+		@media (min-width: 2560px)
+			background: url(img/top_bg_w.png), url(img/top_forest_w.jpg)
+			background-size: auto auto, 100% auto
+			background-repeat: no-repeat, no-repeat
+			background-position: top center, bottom center
+
+		@media (max-width: 1148px)
+			background: url(img/top_bg.png), url(img/top_forest_w.jpg)
+			background-size: auto 50%, auto 20%
+			background-repeat: no-repeat, no-repeat
+			background-position: top center, bottom center
+			padding: 0 0 230px
+		@media (max-width: 402px)
+			background: url(img/top_bg_m.png), url(img/top_forest_m.png)
+			background-size: contain, 100% auto
+			background-repeat: no-repeat, no-repeat
+			background-position: top center, bottom center
+			padding: 0 0 230px
+		
+		.ny2020-top_girl
+			width: 344px
+			height: 282px
+			background: url(img/top_girl.png) no-repeat center
+			position: absolute
+			bottom: 0 
+			z-index: 0
+			left: 25%
+			@media (max-width: 402px)
+				display: none
+
+
+
+
+		.ny2020-container
+			width: 1310px
+			@media (min-width: 1441px)
+				width: 100%
+			@media (max-width: 1309px)
+				width: 100%
+
+		.ny2020-texts
+			padding: 0 203px 
+			box-sizing: border-box
+			
+			position: relative
+			z-index: 3
+			@media (max-width: 767px)
+				padding: 0 15px
+			.ny2020-title
+				font-weight: bold
+				font-size: 36px
+				line-height: 44px
+				text-align: center
+				color: #DEF8FF
+				margin-bottom: 20px
+				@media (max-width: 767px)
+					font-size: 22px
+					line-height: 27px
+
+			.ny2020-subtitle
+				font-family: 'Noto Sans', sans-serif
+				font-weight: 400
+				font-size: 16px
+				line-height: 22px
+				text-align: center
+
+				color: #FFFFFF
+				@media (max-width: 767px)
+					font-size: 16px
+					line-height: 22px
+		.ny2020-top_text 
+			@media (min-width: 2000px)
+				text-align: center
+				img 
+					display: inline-block
+					margin-right: 500px
+
+			@media (max-width: 787px)
+				img
+					width: 90% 
+					display: block
+					margin: 0 auto
+		.ny2020-gift_row
+			margin-top: -128px
+			display: flex 
+			align-items: center
+			margin-bottom: 43px
+			@media (min-width: 1441px)
+				justify-content: center
+			@media (max-width: 1148px)
+				flex-direction: column
+				margin-top: 100px
+				margin-bottom: 60px
+
+			.ny2020-gift
+				margin-left: 19px
+				img
+					max-width: 100%
+				@media (min-width: 1441px)
+					margin-left: -360px
+
+			.ny2020-top-btn
+				margin-top: 63px
+				margin-left: -57px
+				@media (max-width: 767px)
+					margin: 25px auto 0
+
+
+	.ny2020-game_row
+		background: url(img/game1_bg.jpg) no-repeat center
+		background-size: cover
+		padding: 22px 0 
+		box-sizing: border-box
+
+		@media (min-width: 1442px)
+			background: url(img/game1_bg_w.jpg) no-repeat center
+			background-size: cover
+		.ny2020-container
+			display: flex
+			@media (min-width: 1442px)
+
+				width: 1442px
+			@media (max-width: 1442px)
+				box-sizing: border-box
+				padding: 0 20px
+			@media (max-width: 767px)
+				justify-content: center
+		&.ny2020-game_row_right
+			.ny2020-container
+				justify-content: flex-end
+				@media (max-width: 767px)
+					justify-content: center
+
+		&.ny2020-game2
+			background: url(img/game2_bg.jpg) no-repeat center
+			background-size: cover
+			@media (min-width: 1442px)
+				background: url(img/game2_bg_w.jpg) no-repeat center
+				background-size: cover
+		&.ny2020-game3
+			background: url(img/game3_bg.jpg) no-repeat center
+			background-size: cover
+			@media (min-width: 1442px)
+				background: url(img/game3_bg_w.jpg) no-repeat center
+				background-size: cover
+		&.ny2020-game4
+			background: url(img/game4_bg.jpg) no-repeat center
+			background-size: cover
+			@media (min-width: 1442px)
+				background: url(img/game4_bg_w.jpg) no-repeat center
+				background-size: cover
+		&.ny2020-game5
+			background: url(img/game5_bg.jpg) no-repeat center
+			background-size: cover
+			@media (min-width: 1442px)
+				background: url(img/game5_bg_w.jpg) no-repeat center
+				background-size: cover
+		&.ny2020-game6
+			background: url(img/game6_bg.jpg) no-repeat center
+			background-size: cover
+			@media (min-width: 1442px)
+				background: url(img/game6_bg_w.jpg) no-repeat center
+				background-size: cover
+
+		.ny2020-game_card
+			border-radius: 6px
+			overflow: hidden
+			background: url(img/card_bg.png) no-repeat center top
+			padding: 50px 50px 58px
+			text-align: center
+			width: 513px 
+			box-sizing: border-box
+			@media (max-width: 543px)
+				width: 100%
+				padding: 40px 20px 50px
+				background: url(img/card_bg_m.png) no-repeat center top
+				background-size: cover
+
+
+			.ny2020-game_logo
+				margin: 0 auto
+				margin-bottom: 20px
+				position: relative
+				@media (max-width: 543px)
+
+					max-width: 90%
+
+				img 
+					position: relative
+					z-index: 1
+					max-width: 100%
+				&:after 
+					content: ''
+					z-index: 0
+					position: absolute 
+					width: 80px 
+					height: 80px 
+					background: rgba(0,0,0,.2)
+					background: rgba(29,29,35,.5)
+					top: 50% 
+					margin-top: -40px
+					left: 50% 
+					margin-left: -40px
+					box-shadow: 0px 10px 40px #000000
+					box-shadow: 0px 10px 40px #1D1D23
+			.ny2020-game_title
+				font-weight: bold
+				font-size: 20px
+				line-height: 28px
+				color: #FC981D
+				margin-bottom: 20px
+			.ny2020-game_subtitle
+				font-family: Noto Sans, Arial, sans-serif
+				font-weight: 400
+				font-size: 14px
+				line-height: 19px
+				color: #FFFFFF
+				margin-bottom: 27px
+	.ny2020-game_row.ny2020-game1
+		.ny2020-game_logo
+
+			@media (max-width: 543px)
+				width: 40%
+	.ny2020-game_row.ny2020-game2
+		.ny2020-game_logo
+
+			@media (max-width: 543px)
+				width: 60%
+	.ny2020-game_row.ny2020-game3
+		.ny2020-game_logo
+
+			@media (max-width: 543px)
+				width: 40%
+	.ny2020-game_row.ny2020-game4
+		.ny2020-game_logo
+
+			@media (max-width: 543px)
+				width: 60%
+	.ny2020-game_row.ny2020-game5
+		.ny2020-game_logo
+
+			@media (max-width: 543px)
+				width: 50%
+	.ny2020-bottom
+		background: url(img/bottom_bg.jpg) no-repeat center top
+		padding-top: 40px
+		text-align: center
+		padding-bottom: 60px
+		position: relative
+		@media (min-width: 2560px)
+			background-size: 100% auto
+		@media (max-width: 699px)
+			background-size: auto 100%
+		.ny2020-bottom-snow-bg
+			position: absolute
+			left: 0 
+			right: 0 
+			bottom: 0 
+			height: 50% 
+			background: url(img/bottom_snow_m.png) no-repeat center bottom
+
+			background-size: 100% 100%
+			z-index: 0
+		.ny2020-container
+			width: 1202px
+			@media (max-width: 1201px)
+				width: 100%
+
+		.ny2020-bottom_gift_row
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			z-index: 5
+			@media (max-width: 699px)
+				flex-direction: column
+			@media (max-width: 399px)
+				overflow: hidden
+
+
+			.ny2020-bottom_text
+				margin-left: 81px
+				@media (max-width: 1202px)
+					max-width: 50% 
+					img 
+						width: 100%
+				@media (max-width: 699px)
+					max-width: 50% 
+					margin-left: 0
+				@media (max-width: 399px)
+					max-width: 90%
+
+
+			.ny2020-bottom_gift
+				margin-left: -120px
+				margin-top: 10px
+
+				@media (max-width: 1202px)
+					max-width: 50% 
+					img 
+						width: 100%
+
+				@media (max-width: 699px)
+					max-width: 50% 
+					margin-left: 0
+				@media (max-width: 399px)
+					max-width: 90%
+					img 
+						width: 130%
+						margin-left: -10%
+		.ny2020-bottom_texts
+			color: #FFFFFF	
+			position: relative
+			z-index: 5
+			width: 80%
+			margin: -10px auto 38px
+
+
+			@media (max-width: 1201px)
+				padding: 0 15px
+			@media (max-width: 699px)
+				margin-top: 20px
+
+			.ny2020-bottom_title
+				font-weight: bold
+				font-size: 24px
+				line-height: 32px
+				margin-bottom: 20px
+			.ny2020-bottom_subtitle
+				font-family: Noto Sans
+				font-weight: 500
+				font-size: 16px
+				line-height: 22px
+		.ny2020-bottom_special_row
+			display: flex 
+			justify-content: space-between
+			margin-bottom: 50px
+			position: relative
+			z-index: 5
+			@media (max-width: 699px)
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				margin-bottom: 0
+			a 
+				display: block 
+				width: 380px 
+				border-radius: 6px 
+				overflow: hidden 
+				border: 1px solid rgba(255,255,255,.3)
+				outline: none
+				height: 283px
+				position: relative
+				@media (max-width: 1169px)
+					width: 30%
+					height: auto
+
+				@media (max-width: 699px)
+					width: 270px 
+					height: 202px
+					margin-bottom: 20px
+
+				img 
+					transition: .5s
+					display: block
+					height: 100% 
+					width: 100%
+				
+				&:hover 
+					img 
+						transform: scale(1.05)
+		.ny2020-bottom_btn
+			box-shadow: none
+			margin-bottom: 50px
+			position: relative
+			z-index: 5
+			@media (max-width: 699px)
+				margin-bottom: 30px
+
+		.ny2020-bottom_nice
+			position: relative
+			z-index: 5
+			@media (max-width: 699px)
+				max-width: 80% 
+				margin: 0 auto
+				img 
+					width: 100%
+
+
+
+	footer.ny2020
+		background: #23232B
+		padding: 20px 
+		box-sizing: border-box
+		font-family: 'Noto Sans', Arial, sans-serif
+		font-size: 12px
+		line-height: 16px
+		.ny2020-container
+			width: 1340px
+			display: flex
+			justify-content: space-between
+			@media (max-width: 1380px)
+				width: 100%
+			@media (max-width: 554px)
+				flex-direction: column
+
+			.ny2020-copy_text
+				color: #505059
+
+				font-size: 10px
+				max-width: 434px
+				line-height: 14px
+			.ny2020-copy_text_dt
+				display: block
+				@media (max-width: 554px)
+					display: none
+			.ny2020-copy_text_mob
+				display: none
+				@media (max-width: 554px)
+					display: block
+					width: 280px
+
+			.ny2020-footer-left
+				display: flex
+				align-items: center
+				@media (max-width: 554px)
+					flex-direction: column
+					align-items: flex-start
+
+
+				.ny2020-copy
+					color: #505059
+					@media (max-width: 1060px)
+						width: 280px
+						flex-shrink: 0
+					@media (max-width: 554px)
+						width: 100%
+
+					.ny2020-copy_top
+						margin-bottom: 20px
+						.ny2020-social_links_list
+							display: inline-block
+							@media (max-width: 554px)
+								display: block
+								margin-left: -10px 
+								margin-top: 10px
+
+						a 
+							display: inline-block
+							margin: 0 10px
+							img
+								transition: .3s
+							&:hover 
+								img
+									filter: brightness(1.3)
+					
+				.ny2020-footer_links
+					display: flex
+					@media (max-width: 554px)
+						margin-bottom: 20px
+
+
+
+					.ny2020-footer_links_col
+						width: 230px
+						@media (max-width: 1060px)
+							width: 200px
+						@media (max-width: 1023px)
+							width: auto
+							margin-right: 20px
+
+
+					&.ny2020-footer_links_dt
+						display: flex
+						@media (max-width: 651px)
+							display: none
+
+					&.ny2020-footer_links_mob
+						display: none
+						@media (max-width: 651px)
+							display: flex
+					
+					a 
+						color: #909099		
+						font-size: 12px
+						line-height: 16px
+						text-decoration: none
+						display: block
+						margin-bottom: 3px
+						transition: .3s
+						&:hover
+							filter: brightness(1.3)
+						&.ny2020-link_doc
+							padding-left: 15px
+							position: relative
+							&:before 
+								content: ''
+								position: absolute
+								width: 10px 
+								height: 10px
+								background: url(img/document.png) no-repeat center
+								left: 0 
+								top: 2px
+						&.ny2020-link_blog
+							padding-left: 15px
+							position: relative
+							&:before 
+								content: ''
+								position: absolute
+								width: 10px 
+								height: 10px
+								background: url(img/medium.png) no-repeat center
+								left: 0 
+								top: 2px
+			.ny2020-footer-right
+				width: 107px
+				flex-shrink: 0
+				@media (max-width: 767px)
+					display: none
+
+				.ny2020-install_btn
+					padding: 3px 10px
+
+					text-decoration: none
+					background: #7545E2
+
+					border: 1px solid rgba(255, 255, 255, 0.15)
+					box-sizing: border-box
+
+					box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15)
+					border-radius: 4px
+
+					font-weight: bold
+					font-size: 10px
+					line-height: 14px
+
+					display: flex
+					align-items: center
+					text-align: center
+
+					color: #FFFFFF
